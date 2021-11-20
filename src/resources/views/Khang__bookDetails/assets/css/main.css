@@ -351,7 +351,7 @@ td:last-child {
     padding: 0 12px;
     height: 40px;
     min-width: 120px;
-    margin: 6px 24px;
+    margin: 6px 12px;
     background: rgb(245, 245, 250);
     border-radius: 100px;
 }
@@ -373,7 +373,32 @@ td:last-child {
     width: 72px;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
+
+.filter-stars__item--active {
+    background-color: #fff700;
+    border:1px solid var(--primary-color);
+    width: 96px;
+    justify-content: center;
+    padding-right: 8px;
+}
+
+.filter-stars__item--active .filter-stars__icon {
+    color: rgb(255, 161, 66);
+}
+
+.filter-stars__item--active .active-icon {
+    position: relative;
+    display: block;
+}
+.active-icon {
+    left: 2px;
+    position: absolute;
+    padding: 0 12px 0 8px;
+    display: none;
+}
+
 .filter-stars__item:hover {
     cursor: pointer;
 }
@@ -543,19 +568,20 @@ td:last-child {
 }
 
 .reviews-pages__item--active {
-    background-color: rgb(24, 158, 255);
+    background-color: var(--primary-color);
     color: white;
 }
 
 
 
 .reviews-pages__item:hover {
-    background-color: rgba(24, 158 , 255, 0.3);
+    background-color: #f4e39f;
+
     cursor: pointer;
 }
 
 .reviews-pages__item--active:hover {
-    background-color: rgb(24, 158, 255);
+    background-color: #eca40e;
     cursor: text;
 }
 
@@ -569,4 +595,53 @@ td:last-child {
 
 .pagination__icon:hover {
     cursor: pointer;
+}
+
+/* reviews reply */
+.reviews-comment__reply {
+    margin-top: 24px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.textarea__avatar {
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.textarea__input {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 128px;
+    margin-left: 24px;
+}
+.textarea__input textarea {
+    position: relative;
+    border-radius: 24px;
+    border-color: var(--primary-color);
+    font-size: 1.15rem;
+    width: 100%;
+    line-height: 1.8rem;
+    padding: 14px 60px 14px 24px;
+    overflow: hidden;
+    resize: none;
+
+}
+.textarea__input i {
+    cursor: pointer;
+}
+
+#khangdeptrai {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-60%);
+}
+textarea {
+    font-family: inherit;
+
 }

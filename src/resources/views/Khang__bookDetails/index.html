@@ -308,12 +308,14 @@
                                     Đã mua hàng
                                 </div>
                                 <div class="top__filter-stars">
-                                    <div class="filter-stars__item">
+                                    <div class="filter-stars__item" onclick="active()" id="filter-star">
+                                            <span class="active-icon"><i class="fas fa-check"></i></span>
                                             5
                                             <div class="filter-stars__icon">
                                                 <i class="far fa-star"></i>
                                             </div>
                                     </div>
+                                    
                                     <div class="filter-stars__item">
                                         4
                                         <div class="filter-stars__icon">
@@ -444,11 +446,14 @@
                                         </span>
                                     </div>
 
-                                    <div class="interact__comment">
+                                    <div onclick="myfunction()" ondblclick="" class="interact__comment">
                                         Bình luận
 
                                     </div>
                                 </div>
+                                <div  class="reviews-comment__reply" id="reply-comment">
+                                    
+                                </div>   
                             </div>
                         </div>
                     </div>
@@ -554,21 +559,24 @@
                                         </span>
                                     </div>
 
-                                    <div class="interact__comment">
+                                    <div onclick="myfunction()" class="interact__comment">
                                         Bình luận
 
                                     </div>
                                 </div>
+                                <div  class="reviews-comment__reply" id="reply-comment">
+                                    
+                                </div>   
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="reviews-comment">
                     <div class="grid__row">
                         <div class="grid__col-3">
                             <div class="comment-user">
-                                <div class="comment-user__avatar" style="background-image: url(https://business.bing.com/api/v3/search/person/photo?caller=IP&id=acb7239c-c356-4185-8bc3-2870955be68f);")></div>
+                                <div class="comment-user__avatar" style="background-image: url(https://business.bing.com/api/v3/search/person/photo?caller=IP&id=acb7239c-c356-4185-8bc3-2870955be68f);"></div>
                                 
                                 <div class="comment-user__info">
                                     <div class="comment-user__name">
@@ -664,15 +672,21 @@
                                         </span>
                                     </div>
 
-                                    <div class="interact__comment">
+                                    <div onclick="myfunction()" class="interact__comment">
                                         Bình luận
 
                                     </div>
                                 </div>
+                                <div  class="reviews-comment__reply" id="reply-comment">
+                                    
+                                </div>   
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
+                
             </div>
         </div>
 
@@ -687,7 +701,7 @@
                                 <div class="reviews-pages__item reviews-pages__item--active">
                                     1
                                 </div>
-                                <div class="reviews-pages__item">
+                                <div class="reviews-pages__item" id="test" onclick="test()">
                                     2
                                 </div>
                                 <div class="reviews-pages__item">
@@ -711,6 +725,33 @@
         <footer class="footer">
 
         </footer>
+
+
+
+        <!-- script -->
+        <script>
+            function myfunction() {
+                document.getElementById("reply-comment").innerHTML = `
+                                    <div class="textarea__avatar" style="background-image: url(https://business.bing.com/api/v3/search/person/photo?caller=IP&id=acb7239c-c356-4185-8bc3-2870955be68f);">
+                                        
+                                    </div>
+
+                                    <div class="textarea__input">
+                                        <textarea name="" id="" cols="30" rows="1" style="height: 60px;" placeholder="Viết câu trả lời"></textarea>
+                                        <i class="far fa-paper-plane" id="khangdeptrai" style="font-size: 24px; opacity: 0.6; margin-right: 12px;"></i>
+                                    </div>
+            `
+            }
+            
+            function active() {
+                document.getElementById("filter-star").className = "filter-stars__item filter-stars__item--active"
+            }
+
+            function test() {
+                document.getElementById("test").className = "reviews-pages__item reviews-pages__item--active"
+            }
+
+        </script>
     </div>
 </body>
 </html>
