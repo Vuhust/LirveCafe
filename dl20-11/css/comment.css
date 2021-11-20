@@ -1,0 +1,66 @@
+ .box{
+   margin: auto;
+   width: 70%;
+   height: auto;
+   background: whitesmoke;
+   border-radius: 10pt;
+   align-items: center;
+   /* text-align: center; */
+ } 
+ .infor{
+   width: 140px;
+   height: 140px;
+   float: left;
+   background-color: blue;
+   border-radius: 7pt;
+ }
+.box1{
+  width: 30px;
+  height: auto;
+  background-color: yellow;
+}
+
+.vote{
+  width: 270px;
+  height: 70px;
+  background-color: red;
+  float : left;
+  margin-top: 0%;
+  border-radius: 5pt;
+
+}
+
+
+textarea{
+  width: 100%;
+  height: 120px;
+  border-radius: 3px;
+}
+
+.h2{
+  width: auto;
+  height: 30px;
+}
+
+.img{
+  text-align: center;
+  width: 100%;
+  height: 100pt;
+}
+.submit input[type="submit"]{
+  margin-bottom: 20pt;
+  margin-top: 10pt;
+  border-radius: 10px;
+  background-color: gold;
+  border: transparent;
+}
+
+.box input[type="file"]{
+  background-color: none;
+  margin-top: 10pt;
+  border: transparent;
+}
+
+#huy{
+  margin-left: 5%;
+}
