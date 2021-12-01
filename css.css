@@ -1,0 +1,146 @@
+*{
+    background:none;
+    /* box-sizing: border-box; */
+
+}
+.bigbox{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    top: 10%;
+    border-top-right-radius: 5pt;
+    border-top-left-radius: 5pt;
+    border: blue;
+    box-shadow: 1px 1px 1px 4px rgb(241, 229, 229);
+
+    /* display: block; 
+    */
+}
+.head{
+    border-top-right-radius: 5pt;
+    border-top-left-radius: 5pt;
+    width: 100%;
+    height: 130px;
+    background-color: rgb(169, 134, 84);
+    display: block;
+    border: 5pt blue;
+    color: blue;
+    box-shadow: 1px 1px 1px 2px rgb(241, 229, 229)
+}
+
+
+.box {
+    width: 100%;
+    height: auto;
+    /* min-height: 400pt;    */
+    /* background-color: whitesmoke; */
+    flex-direction: column;
+    /* display: block; */
+    box-shadow: 1px 1px 1px 2px rgb(241, 229, 229);
+
+}
+
+
+
+
+.list{
+    width: auto;
+    height: 300pt;
+    color: goldenrod;
+    height:100px ;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px 2px rgb(241, 229, 229);
+    padding: 5pt;
+    border-radius: 5px;
+
+
+}
+
+ .data{
+    margin-left: 5%;
+    float:left ;
+    width: 90%;
+    height: 50pt;
+    text-align: 5px left;
+    border-radius: 5pt;
+    color: black;
+    
+}
+
+ .noti{
+    cursor: pointer;
+    margin-left: 5%;
+    color: blue;
+    font-size: 15pt;
+    text-align: left;
+    width: auto;
+    float: left;
+    height: 15pt;
+    background: transparent;
+    padding: 4px;
+    /* margin-left: 5%; */
+}
+ .date {
+     margin-left: 15pt;
+     margin-top: 3pt;
+    color:black;
+
+    width: 40%;
+    height: 15pt;
+    float: left;
+    text-align: left;
+    background: transparent;
+    /* color: black; */
+    padding: 1px;
+
+}
+.dell{
+    margin-right:  5%;
+    width: auto;
+    height: 15pt;
+    float: right;
+    color: blue;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+
+}
+
+
+
+.thongbao, #clearall,  #chooseall{
+    margin-top: 20pt;
+    width: 30%;
+    margin-bottom: 20pt;
+    background: transparent;
+
+
+}
+
+
+ .thongbao{
+     float:left;
+     font-size: 30pt;
+     margin-left: 5%;
+ }
+ #clearall,  #chooseall{
+     cursor: pointer;
+     margin-right: 5%;
+     margin-left: 5%;
+     width: auto;
+     float:right;
+     margin-bottom: 0pt;
+
+ }
+
+ .add{
+     margin-top: 40pt;
+     margin-bottom: 40pt;
+     margin-right: 40pt;
+     width: auto;
+     height: auto;
+     color: blue;
+     float: right;
+    cursor: pointer;
+    /* margin-top: 20px; */
+ }
